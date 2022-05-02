@@ -3,6 +3,26 @@
   --whiteColor: #fff;
 }
 
+/* -------------------------------
+INSIDE PHOTO
+------------------------------- */
+
+.insidePhotoArea {
+  overflow: hidden;
+  position: relative;
+}
+
+.insidePhotoArea img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 55%;
+}
+
+/* -------------------------------
+FOOTER
+------------------------------- */
+
 footer {
   text-align: center;
   background-color: var(--mainColor);

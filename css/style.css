@@ -1,0 +1,11 @@
+:root {
+  --mainColor: #000;
+  --whiteColor: #fff;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  padding: 20px;
+}

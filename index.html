@@ -21,13 +21,7 @@
       class="navbar navbar-expand-lg fixed-top navbar-dark bg-pizzeria py-3 px-sm-4"
     >
       <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="#"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent.show"
-          >Pizzeria Zaścianek</a
-        >
+        <a class="navbar-brand" href="#home">Pizzeria Zaścianek</a>
         <a href="#" class="phoneIcon">
           <svg
             class="d-block d-lg-none"
@@ -58,41 +52,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent.show"
+              <a class="nav-link active" aria-current="page" href="#home"
                 >Strona główna</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="#"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent.show"
-                >Menu</a
-              >
+              <a class="nav-link active" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="#"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent.show"
-                >Aktualne promocje</a
-              >
+              <a class="nav-link active" href="#discounts">Aktualne promocje</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="#"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent.show"
-                >Rejon dostaw</a
-              >
+              <a class="nav-link active" href="#deliveryArea">Rejon dostaw</a>
             </li>
           </ul>
         </div>
@@ -103,7 +74,7 @@
     MAIN PHOTO
     ------------------------------- -->
 
-    <div class="mainPhotoArea container-fluid p-0">
+    <div id="home" class="mainPhotoArea container-fluid p-0">
       <div class="row">
         <div class="col-12">
           <img src="img/outside.jpg" alt="" />
@@ -119,9 +90,9 @@
     MENU
     ------------------------------- -->
 
-    <div class="menuArea container-fluid p-0">
+    <div id="menu" class="menuArea container-fluid p-0">
       <div class="row m-0">
-        <div class="col-12 col-md-10 col-lg-9 col-xl-7 mx-auto py-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-7 mx-auto pt-5">
           <div class="menuButtons">
             <button id="buttonPizza">PIZZA</button>
             <button id="buttonOthers">INNE</button>
@@ -151,8 +122,8 @@
     DISCOUNTS
     ------------------------------- -->
 
-    <div class="discountArea container">
-      <div class="row pb-5">
+    <div id="discounts" class="discountArea container">
+      <div class="row pb-5 pt-5">
         <div class="col-11 col-md-10 col-lg-8 col-xl-7 mx-auto">
           <h1>AKTUALNE PROMOCJE</h1>
           <p class="currentDiscounts"></p>
@@ -188,7 +159,7 @@
     <!-- ------------------------------
     DELIVERY AREA
     ------------------------------- -->
-    <div class="deliveryArea container">
+    <div id="deliveryArea" class="deliveryArea container">
       <div class="row py-5">
         <div class="col-11 col-md-10 col-lg-8 col-xl-7 mx-auto">
           <h1>REJON DOSTAW</h1>

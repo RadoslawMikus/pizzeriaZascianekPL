@@ -12,19 +12,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
     <!-- ------------------------------
     NAVIGATION
     ------------------------------- -->
     <nav
+      data-scroll-header
       class="navbar navbar-expand-lg fixed-top navbar-dark bg-pizzeria py-3 px-sm-4"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#home">Pizzeria Zaścianek</a>
-        <a href="#" class="phoneIcon">
+        <a
+          class="navbar-brand"
+          href="#home"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent.show"
+          >Pizzeria Zaścianek</a
+        >
+        <a class="phoneIcon d-block d-lg-none" href="tel:515716259">
           <svg
-            class="d-block d-lg-none"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -52,18 +59,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent.show"
                 >Strona główna</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#menu">Menu</a>
+              <a
+                class="nav-link active"
+                href="#menu"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent.show"
+                >Menu</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#discounts">Aktualne promocje</a>
+              <a
+                class="nav-link active"
+                href="#discounts"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent.show"
+                >Aktualne promocje</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#deliveryArea">Rejon dostaw</a>
+              <a
+                class="nav-link active"
+                href="#deliveryArea"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent.show"
+                >Rejon dostaw</a
+              >
             </li>
           </ul>
         </div>
@@ -100,14 +130,12 @@
           <img
             class="menuPizza"
             src="img/menu1.jpg"
-            alt="Zdjęcie przedstawia wnętrze pizzerii, w której siedzi ponad 20 osób, w tym małe dzieci. 
-            Wszyscy oglądają mecz reprezentacji Polski na ponad stucalowym ekranie."
+            alt="Zdjęcie przedstawia pierwszą stronę menu. Więcej informacji możemy udzielić pod numerem telefonu 515 716 259"
           />
           <img
             class="menuOthers d-none"
             src="img/menu2.png"
-            alt="Zdjęcie przedstawia wnętrze pizzerii, w której siedzi ponad 20 osób, w tym małe dzieci. 
-          Wszyscy oglądają mecz reprezentacji Polski na ponad stucalowym ekranie."
+            alt="Zdjęcie przedstawia drugą stronę menu. Więcej informacji możemy udzielić pod numerem telefonu 515 716 259"
           />
         </div>
       </div>
@@ -116,7 +144,10 @@
     <!-- ------------------------------
     CALL US
     ------------------------------- -->
-    <img id="callUs" class="d-none d-lg-block" src="img/callUs.png" />
+
+    <a href="tel:515716259" class="d-none d-lg-block" id="callUs" tabindex="0"
+      ><img src="img/callUs.png"
+    /></a>
 
     <!-- ------------------------------
     DISCOUNTS
@@ -144,6 +175,7 @@
     <!-- ------------------------------
     INSIDE PHOTO
     ------------------------------- -->
+
     <div class="insidePhotoArea container-fluid p-0">
       <div class="row">
         <div class="col-12">
@@ -159,6 +191,7 @@
     <!-- ------------------------------
     DELIVERY AREA
     ------------------------------- -->
+
     <div id="deliveryArea" class="deliveryArea container">
       <div class="row py-5">
         <div class="col-11 col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -180,11 +213,12 @@
         </div>
       </div>
     </div>
+
     <!-- ------------------------------
     MAP
     ------------------------------- -->
 
-    <!-- <div class="mapArea container-fluid p-0">
+    <div class="mapArea container-fluid p-0">
       <div class="row">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.552216150697!2d14.737800413386895!3d53.44071425040854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700a136f285dcb1%3A0xe0e5ffc9981bf54a!2sKlonowa%202%2C%2070-895%20Za%C5%82om!5e0!3m2!1spl!2spl!4v1651514167136!5m2!1spl!2spl"
@@ -196,11 +230,12 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-    </div> -->
+    </div>
 
     <!-- ------------------------------
     FOOTER
     ------------------------------- -->
+
     <footer class="footerArea container-fluid">
       <div class="row">
         <div class="col-12">Copyright © Pizzeria Zaścianek 2018</div>

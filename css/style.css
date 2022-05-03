@@ -34,6 +34,10 @@ nav {
   width: 20vw;
 }
 
+#callUs img {
+  width: 100%;
+}
+
 .phoneIcon {
   margin-left: auto;
   margin-right: 20px;

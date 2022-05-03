@@ -126,6 +126,40 @@ MENU
 }
 
 /* -------------------------------
+DISCOUNT AREA
+------------------------------- */
+
+.pizzaOfTheDay {
+  margin: 30px auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .pizzaOfTheDay {
+    width: 75%;
+  }
+}
+
+.pizzaOfTheDay tr:first-of-type {
+  background-color: #015687;
+  color: var(--whiteColor);
+}
+
+.pizzaOfTheDay tbody {
+  border: 1px solid black;
+}
+
+.pizzaOfTheDay th {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.pizzaOfTheDay td {
+  padding: 15px 10px;
+}
+
+/* -------------------------------
 DELIVERY AREA
 ------------------------------- */
 .deliveryArea h1,
@@ -149,7 +183,7 @@ INSIDE PHOTO
 }
 
 /* -------------------------------
-INSIDE PHOTO
+MAP
 ------------------------------- */
 
 .mapArea {

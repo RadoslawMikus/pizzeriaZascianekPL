@@ -211,7 +211,7 @@ const todaysDiscount = document.createElement("div");
 
 for (let i = 1; i <= Object.keys(pizzaDiscount).length; i++) {
   if (today == i) {
-    todaysDiscount.innerHTML = `${pizzaDiscount[i]["name"]}, ${pizzaDiscount[i]["price30"]}, ${pizzaDiscount[i]["price50"]}, ${pizzaDiscount[i]["price60"]} `;
+    todaysDiscount.innerHTML = `<table class="pizzaOfTheDay"><tbody><tr><th colspan="100">PIZZA DNIA</th></tr><tr><td>${pizzaDiscount[i]["name"]}</td> <td>${pizzaDiscount[i]["price30"]} zł</td> <td>${pizzaDiscount[i]["price50"]} zł</td> <td>${pizzaDiscount[i]["price60"]} zł</td></tr></tbody></table> `;
   }
 }
 console.log("Today is: " + today);

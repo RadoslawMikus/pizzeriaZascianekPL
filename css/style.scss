@@ -1,3 +1,6 @@
+$mainColor: #000;
+$secondaryColor: #129cec;
+
 html {
   scroll-padding-top: 72px;
 }
@@ -15,7 +18,7 @@ nav {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #129cec;
+  color: $secondaryColor;
 }
 
 .nav-item {
@@ -27,9 +30,10 @@ nav {
   bottom: 5px;
   right: 5px;
   width: 20vw;
-}
-#callUs img {
-  width: 100%;
+
+  img {
+    width: 100%;
+  }
 }
 
 .phoneIcon {
@@ -38,18 +42,19 @@ nav {
   opacity: 0.5;
   transform: scale(1.5);
   color: #fff;
-}
-.phoneIcon:hover {
-  opacity: 0.8;
-  color: #fff;
+
+  &:hover {
+    opacity: 0.8;
+    color: #fff;
+  }
 }
 
 .bg-pizzeria {
-  background-color: #000;
+  background-color: $mainColor;
 }
 
 #bg-scroll {
-  background-color: #000;
+  background-color: $mainColor;
 }
 
 /* -------------------------------
@@ -58,14 +63,13 @@ MAIN PHOTO
 .mainPhotoArea {
   overflow: hidden;
   position: relative;
-}
-.mainPhotoArea img {
-  height: 100vh;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 65%;
-     object-position: 65%;
+
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 65%;
+  }
 }
 
 .mainText {
@@ -90,40 +94,47 @@ MENU
 
 .menuButtons {
   text-align: center;
-}
-.menuButtons button {
-  border: 0;
-  border-radius: 15px;
-  color: #fff;
-  background-color: rgb(0, 0, 0);
-  padding: 5px 15px;
-  transition: 0.2s ease-in-out;
-}
-.menuButtons button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+
+  button {
+    border: 0;
+    border-radius: 15px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
 }
 
 /* -------------------------------
 DISCOUNT AREA
 ------------------------------- */
+
 .pizzaOfTheDay {
   margin: 30px auto;
   width: 100%;
   text-align: center;
-}
-.pizzaOfTheDay tbody {
-  border: 1px solid #000;
-}
-.pizzaOfTheDay tr:first-of-type {
-  background-color: #129cec;
-  color: #fff;
-}
-.pizzaOfTheDay th {
-  padding: 10px;
-  text-transform: uppercase;
-}
-.pizzaOfTheDay td {
-  padding: 15px 10px;
+
+  tbody {
+    border: 1px solid #000;
+  }
+
+  tr:first-of-type {
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+
+  th {
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 15px 10px;
+  }
 }
 
 /* -------------------------------
@@ -137,21 +148,22 @@ DELIVERY AREA
 /* -------------------------------
 INSIDE PHOTO
 ------------------------------- */
+
 .insidePhotoArea {
   overflow: hidden;
-}
-.insidePhotoArea img {
-  height: 80vh;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 55%;
-     object-position: 55%;
+
+  img {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 55%;
+  }
 }
 
 /* -------------------------------
 MAP
 ------------------------------- */
+
 .mapArea {
   overflow: hidden;
 }
@@ -159,6 +171,7 @@ MAP
 /* -------------------------------
 FOOTER
 ------------------------------- */
+
 footer {
   text-align: center;
   background-color: #000;

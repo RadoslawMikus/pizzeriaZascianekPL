@@ -223,14 +223,15 @@ const buttonOthers = document.querySelector("#buttonOthers");
 const menuPizza = document.querySelector(".menuPizza");
 const menuOthers = document.querySelector(".menuOthers");
 
-const toggler = () => {
+buttonPizza.addEventListener("click", () => {
   menuOthers.classList.add("d-none");
   menuPizza.classList.remove("d-none");
-};
+});
 
-[buttonPizza, buttonOthers].forEach((button) =>
-  button.addEventListener("click", toggler)
-);
+buttonOthers.addEventListener("click", () => {
+  menuOthers.classList.remove("d-none");
+  menuPizza.classList.add("d-none");
+});
 
 // ----------------------------------
 // SMOOTH SCROLL

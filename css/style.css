@@ -151,13 +151,14 @@ DISCOUNT AREA
   color: #fff;
 }
 .pizzaOfTheDay th {
-  padding: 15px;
+  padding: 8px 15px;
   position: relative;
   font-size: 36px;
   font-family: "Kaushan Script", cursive;
+  text-shadow: 1px 1px 2px #000;
 }
 .pizzaOfTheDay td {
-  padding: 25px 10px;
+  padding: 20px 10px;
   font-size: 16px;
 }
 .pizzaOfTheDay .pizzaOfTheDayOverlay {
@@ -201,6 +202,10 @@ MAP
 ------------------------------- */
 .mapArea {
   overflow: hidden;
+}
+.mapArea .row {
+  height: 450px;
+  max-height: 60vh;
 }
 
 /* -------------------------------

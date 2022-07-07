@@ -170,16 +170,17 @@ DISCOUNT AREA
   }
 
   th {
-    padding: 15px;
+    padding: 8px 15px;
     position: relative;
     font: {
       size: 36px;
       family: "Kaushan Script", cursive;
     }
+    text-shadow: 1px 1px 2px #000;
   }
 
   td {
-    padding: 25px 10px;
+    padding: 20px 10px;
     font-size: 16px;
   }
   .pizzaOfTheDayOverlay {
@@ -229,6 +230,10 @@ MAP
 
 .mapArea {
   overflow: hidden;
+  .row {
+    height: 450px;
+    max-height: 60vh;
+  }
 }
 
 /* -------------------------------

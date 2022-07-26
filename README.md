@@ -3,7 +3,7 @@
 ### Repository: https://github.com/davidsmith931/pizzeriaZascianekPL
 ### Live Demo: https://davidsmith931.github.io/pizzeriaZascianekPL/
 
-_SPA made for a small pizza place_
+_Website made for a small pizza place_
 
 
 ### 〽️ &nbsp; Navbar

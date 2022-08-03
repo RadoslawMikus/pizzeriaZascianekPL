@@ -1,7 +1,7 @@
 ## pizzeriaZascianek - SPA
 
-### Repository: https://github.com/davidsmith931/pizzeriaZascianekPL
-### Live Demo: https://davidsmith931.github.io/pizzeriaZascianekPL/
+### Repository: https://github.com/RadoslawMikus/pizzeriaZascianekPL
+### Live Demo: https://radoslawmikus.github.io/pizzeriaZascianekPL/
 
 _Website made for a small pizza place_
 
